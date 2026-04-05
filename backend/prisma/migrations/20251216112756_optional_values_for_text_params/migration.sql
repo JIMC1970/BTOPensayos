@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "TextParams" ALTER COLUMN "speakingRate" DROP NOT NULL,
+ALTER COLUMN "pitch" DROP NOT NULL,
+ALTER COLUMN "volumeGainDb" DROP NOT NULL,
+ALTER COLUMN "sampleRateHertz" DROP NOT NULL;

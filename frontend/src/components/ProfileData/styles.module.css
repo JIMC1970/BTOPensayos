@@ -1,0 +1,9 @@
+.button {
+    align-self: center;
+    width: fit-content;
+    color: #fff;
+    background-color: #ff6c60;
+    padding: 12px 24px;
+    border-radius: 24px;
+    position: absolute;
+}

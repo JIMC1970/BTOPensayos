@@ -1,0 +1,22 @@
+.listing li {
+    list-style: none;
+}
+
+.template {
+    padding: 4px;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.template:last-child {
+    border-bottom: 1px solid grey;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}

@@ -1,0 +1,151 @@
+.access {
+    align-self: center;
+    width: fit-content;
+    color: #fff;
+    background-color: #ff6c60;
+    padding: 12px 24px;
+    border-radius: 24px;
+}
+
+
+.start {
+    color: #ff6c60;
+    width: fit-content;
+    text-align: center;
+    border: solid 2px #ff6c60;
+    padding: 12px 24px;
+    border-radius: 24px;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px;
+    background: linear-gradient(0.30turn, #0099fe, #17c964);
+}
+
+.presentation h1, .presentation h2 {
+    color: #1434a4;
+}
+
+.presentation p {
+    color: #fff;
+}
+
+.presentation .content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.presentation .text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.presentation .image {
+    position:relative;
+    height: 70vw;
+}
+
+.introduction {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+.introduction h2 {
+    color: #1434a4;
+}
+
+.introduction .steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.introduction .content {
+    display: flex;
+    background-color: #f5f7f9;
+    padding: 20px;
+}
+
+.introduction .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1434a4;
+    gap: 8px;
+}
+
+.introduction .frame {
+    position: relative;
+    width: 30vw;
+    aspect-ratio: 1;
+}
+
+.introduction .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #acacac;
+    aspect-ratio: 16/9;
+}
+
+.popular {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.popular h2 {
+    align-self: center;
+}
+
+.popular h3 {
+    margin-bottom: 8px;
+}
+
+.popular h2, .popular h3 {
+    color: #1434a4;
+}
+
+.popular .carrousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    padding: 18px;
+    gap: 20px;
+}
+
+.popular .item {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    box-shadow: 0 0 8px 0 #00000038;
+    border-radius: 12px;
+}
+
+.popular .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular .frame {
+    position: relative;
+    width: 33vw;
+    aspect-ratio: 9/16;
+}
+
+.popular .frame img {
+    object-fit: cover;
+}

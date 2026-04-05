@@ -1,0 +1,16 @@
+.unauth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 85px);
+    align-items: center;
+}
+
+.button { 
+    margin-top: 12px;
+    align-self: center;
+    width: fit-content;
+    border: 2px solid #ff6c60;
+    padding: 12px 24px;
+    border-radius: 24px;
+}

@@ -1,0 +1,64 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          Int       @id @default(autoincrement())
+  email       String    @unique
+  password    String
+  role        String    @default("user")
+  createdAt   DateTime  @default(now())
+}
+
+model Question {
+  id              Int           @id @default(autoincrement())
+  templateId      Int
+  template        Template      @relation(fields: [templateId], references: [id], onDelete: Cascade)
+  text            String
+  placeholder     String
+}
+
+model VoiceParams {
+  id              Int        @id @default(autoincrement())
+  templateId      Int        @unique
+  template        Template   @relation("TemplateVoiceParams",fields: [templateId],references: [id], onDelete: Cascade)
+  speed           Float?     @default(1.0)
+  pitch           Float?     @default(1.0)
+  bitrate         Int?       @default(48000)
+  emotion         String     @default("neutral")
+  pause_sentence  Int        @default(300)
+  pause_paragraph Int        @default(400)
+}
+
+model Template {
+  id              Int          @id @default(autoincrement())
+  title           String
+  name            String
+  questions       Question[]
+  h1              String
+  h2              String?
+  h3              String?
+  description     String?
+  voiceParams     VoiceParams?  @relation("TemplateVoiceParams")
+  textprompt      String?
+  published       Boolean      @default(false)
+  tag             String?
+  popularity      Float        @default(0.0)
+  promo           Boolean      @default(false)
+  createdAt       DateTime     @default(now())
+  plural          Boolean?     @default(false)
+  emotional_state String       @default("none")
+}
+
+model Voice {
+  id              Int       @id @default(autoincrement())
+  name            String
+  value           String
+  gender          String
+  preview         String?
+}

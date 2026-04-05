@@ -1,0 +1,39 @@
+.text {
+    width: 100%;
+    height: 400px;
+}
+
+.voices {
+    display: flex;
+    gap: 24px
+}
+
+.treatment, .gender {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.radioBtns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.music {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.music button, .videoGeneration button {
+    width: fit-content;
+}
+
+.videoGeneration {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}

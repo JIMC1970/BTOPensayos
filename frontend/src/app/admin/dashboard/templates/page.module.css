@@ -1,0 +1,20 @@
+.templates {
+    background: #fff;
+    width: 100%;
+    padding: 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.button {
+    align-self: center;
+    width: fit-content;
+    border: 2px solid #ff6c60;
+    padding: 12px 24px;
+    border-radius: 24px;
+}

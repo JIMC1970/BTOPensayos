@@ -1,0 +1,57 @@
+.listing li {
+    list-style: none;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 0px;
+    margin-bottom: 16px;
+    align-items: end;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.form input, .form select, .form button {
+    height: 36px;
+}
+
+.voice {
+    padding: 4px;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.voice:last-child {
+    border-bottom: 1px solid grey;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.preview {
+    max-width: 200px;
+    overflow: clip;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editControls {
+    display: flex;
+    gap: 14px;
+}
